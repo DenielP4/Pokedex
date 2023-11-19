@@ -7,8 +7,7 @@ import com.example.pokedex.util.Resource
 import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Inject
 
-@ActivityScoped
-class PokemonRepository @Inject constructor(
+class PokemonRepository(
     private val api: PokeApi
 ) {
 
